@@ -18,10 +18,6 @@ public class PlanetService {
         this.restCall = restCall;
     }
 
-    public Planet insert(Planet planet){
-        return null;
-    }
-
     public List<Planet> findAll(){
         return repository.findAll();
     }

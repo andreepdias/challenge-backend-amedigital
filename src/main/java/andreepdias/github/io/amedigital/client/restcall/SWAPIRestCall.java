@@ -18,14 +18,15 @@ public class SWAPIRestCall {
 
         do{
             PlanetsPageSWAPIResponseDTO planetApiResponseDTO = getPlanetsPage(nextURL);
-            nextURL = planetApiResponseDTO.getNext();
-            nextURL = fixURLHttpsPrefix(nextURL, planetsPageURL);
 
             for (PlanetSWAPIDTO planetDTO : planetApiResponseDTO.getResults()) {
                 if(planetDTO.getName().equalsIgnoreCase(planetName)){
                     return planetDTO.getFilms().size();
                 }
             }
+
+            nextURL = planetApiResponseDTO.getNext();
+            nextURL = fixURLHttpsPrefix(nextURL, planetsPageURL);
         }while (nextURL != null);
 
         return 0;
