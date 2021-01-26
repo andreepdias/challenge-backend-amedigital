@@ -1,6 +1,6 @@
 # Challenge Backend AmeDigital
 
-Desafio de um processo seletivo antigo da AmeDigital (2019), realizado para praticar meus conhecimentos em Java. A solução está no meu DockerHub e é detalhada posteriormente.
+Desafio de um processo seletivo antigo da AmeDigital (2019), realizado para praticar meus conhecimentos em Java. A solução está no meu DockerHub e é detalhada a seguir.
 
 Repositório do desafio: https://github.com/AmeDigital/challenge-back-end-hit
 
